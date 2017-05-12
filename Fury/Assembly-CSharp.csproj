@@ -123,6 +123,8 @@
      <Compile Include="Assets\Scripts\BreathRecogniser.cs" />
      <Compile Include="Assets\Scripts\FizzyoDevice.cs" />
      <Compile Include="Assets\Scripts\Ground.cs" />
+     <Compile Include="Assets\Scripts\Player.cs" />
+     <Compile Include="Assets\Scripts\StartCalibrate.cs" />
      <None Include="Assets\Destructible 2D\Shaders\Diffuse.shader" />
      <None Include="Assets\Platform Game Assets\Readme.txt" />
      <None Include="Assets\Pixul\PixulPhysics2D\Shaders\Pixul-Tiled.shader" />

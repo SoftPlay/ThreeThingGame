@@ -47,11 +47,43 @@ public class PixulPhysics : MonoBehaviour
     public Vector2 badVelocity = new Vector2(1.5f, 1.5f);
     public bool isBad = true;
 
+    public float maxFizzyoPressure = 0.5f;
+
+    private BreathRecogniser breath;
+
+    private bool startBreathing;
+
+    void ExhalationCompleteHandler(object sender, ExhalationCompleteEventArgs e)
+    {
+        startBreathing = false;
+        Debug.Log(breath.Breathlength);
+        Debug.Log(breath.ExhaledVolume);
+        this.isBad = !breath.IsBreathGood(breath.Breathlength, 3, breath.ExhaledVolume , maxFizzyoPressure);
+
+        Debug.Log(this.isBad);
+        
+        fire();
+
+        if (destroyAfterFire)
+            if (enableSolidLine)
+                Invoke("DisableSolidLine", destroyDelay);
+            else
+                Invoke("DisableDottedLine", destroyDelay);
+    }
+
 	// Use this for initialization
 	void Start () 
     {
+        startBreathing = false;
         FizzyoDevice insatnce = FizzyoDevice.Instance();
 
+        if (PlayerPrefs.HasKey("Max Fizzyo Pressure"))
+        {
+            maxFizzyoPressure = PlayerPrefs.GetFloat("Max Fizzyo Pressure");
+        }
+
+        breath = new BreathRecogniser(maxFizzyoPressure, 3f);
+        breath.ExhalationComplete += ExhalationCompleteHandler;
         this.isBad = true;
         //apply default material
         if (lineMaterial == null)
@@ -90,7 +122,7 @@ public class PixulPhysics : MonoBehaviour
             GameObject m_line_object = new GameObject("line");
             m_line_object.AddComponent<LineRenderer>();
             m_line = m_line_object.GetComponent<LineRenderer>();
-            m_line.numPositions = noOfTrajectoryPoints;           
+            m_line.positionCount = noOfTrajectoryPoints;           
             m_line.colorGradient = lineColour;            
             m_line.numCornerVertices = cornerVerts;
             m_line.numCapVertices = endVerts;
@@ -104,8 +136,13 @@ public class PixulPhysics : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
     {        
-        float pressure = Fizzyo.FizzyoDevice.Instance().Pressure();
-        Debug.Log(pressure);
+
+        if(startBreathing == true)
+        {
+            float pressure = Fizzyo.FizzyoDevice.Instance().Pressure();
+
+            breath.AddSample(Time.deltaTime, pressure);
+        }
 
         if (m_BallThrown && (m_velocity.magnitude < 0.25f))
         {
@@ -115,14 +152,8 @@ public class PixulPhysics : MonoBehaviour
 
         if (Input.GetButtonDown("Fire1") || (Input.GetKey("space") && m_Pressed))
         {
-            // Upon mouse released we fire
-            fire();
-
-            if (destroyAfterFire)
-                if (enableSolidLine)
-                    Invoke("DisableSolidLine", destroyDelay);
-                else
-                    Invoke("DisableDottedLine", destroyDelay);
+            Debug.Log("Start Breathing");
+            startBreathing = true;
         }
 
         if(Input.GetKey("up"))
@@ -132,7 +163,7 @@ public class PixulPhysics : MonoBehaviour
             m_Pressed = true;
 
             if (enableSolidLine)
-                m_line.numPositions = noOfTrajectoryPoints;
+                m_line.positionCount = noOfTrajectoryPoints;
             else
                 EnableDottedLine();
         } 
@@ -144,7 +175,7 @@ public class PixulPhysics : MonoBehaviour
             m_Pressed = true;
 
             if (enableSolidLine)
-                m_line.numPositions = noOfTrajectoryPoints;
+                m_line.positionCount = noOfTrajectoryPoints;
             else
                 EnableDottedLine();
         }
@@ -171,7 +202,7 @@ public class PixulPhysics : MonoBehaviour
         m_Pressed = true;
 
         if (enableSolidLine)
-            m_line.numPositions = noOfTrajectoryPoints;
+            m_line.positionCount = noOfTrajectoryPoints;
         else
             EnableDottedLine();
 

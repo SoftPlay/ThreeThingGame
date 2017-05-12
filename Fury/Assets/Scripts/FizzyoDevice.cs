@@ -10,7 +10,7 @@ namespace Fizzyo
         //public 
         public bool useRecordedData = true;
         public bool loop = true;
-        public string recordedDataPath = "Data/FizzyoData_3min.fiz";
+        public string recordedDataPath = "Data/FizzyoData_badbreath_too_short.fiz";
         private string[] recordedData;
         private int recordedIndex = 0;
 
