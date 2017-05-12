@@ -6,10 +6,10 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{1EACB0C8-EE32-CEBA-6469-F429B60EF9C9}</ProjectGuid>
+    <ProjectGuid>{7E920E88-A684-E3C5-DF50-39B7CBB3D77A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>Assets</BaseDirectory>
@@ -46,76 +46,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Destructible 2D\Examples\Scripts\D2dBackground.cs" />
-     <Compile Include="Assets\Destructible 2D\Examples\Scripts\D2dBullet.cs" />
-     <Compile Include="Assets\Destructible 2D\Examples\Scripts\D2dCameraShake.cs" />
-     <Compile Include="Assets\Destructible 2D\Examples\Scripts\D2dClickToExplode.cs" />
-     <Compile Include="Assets\Destructible 2D\Examples\Scripts\D2dClickToSpawn.cs" />
-     <Compile Include="Assets\Destructible 2D\Examples\Scripts\D2dClickToStamp.cs" />
-     <Compile Include="Assets\Destructible 2D\Examples\Scripts\D2dColliderlessImpact.cs" />
-     <Compile Include="Assets\Destructible 2D\Examples\Scripts\D2dCompoundPart.cs" />
-     <Compile Include="Assets\Destructible 2D\Examples\Scripts\D2dDragToShoot.cs" />
-     <Compile Include="Assets\Destructible 2D\Examples\Scripts\D2dDragToSlice.cs" />
-     <Compile Include="Assets\Destructible 2D\Examples\Scripts\D2dDragToThrow.cs" />
-     <Compile Include="Assets\Destructible 2D\Examples\Scripts\D2dExplosion.cs" />
-     <Compile Include="Assets\Destructible 2D\Examples\Scripts\D2dFlipper.cs" />
-     <Compile Include="Assets\Destructible 2D\Examples\Scripts\D2dFollow.cs" />
-     <Compile Include="Assets\Destructible 2D\Examples\Scripts\D2dGalleryGun.cs" />
-     <Compile Include="Assets\Destructible 2D\Examples\Scripts\D2dGalleryTarget.cs" />
-     <Compile Include="Assets\Destructible 2D\Examples\Scripts\D2dGui.cs" />
-     <Compile Include="Assets\Destructible 2D\Examples\Scripts\D2dGun.cs" />
-     <Compile Include="Assets\Destructible 2D\Examples\Scripts\D2dHealDamage.cs" />
-     <Compile Include="Assets\Destructible 2D\Examples\Scripts\D2dPlayerCamera.cs" />
-     <Compile Include="Assets\Destructible 2D\Examples\Scripts\D2dPlayerCar.cs" />
-     <Compile Include="Assets\Destructible 2D\Examples\Scripts\D2dPlayerSpaceship.cs" />
-     <Compile Include="Assets\Destructible 2D\Examples\Scripts\D2dRandomVelocity.cs" />
-     <Compile Include="Assets\Destructible 2D\Examples\Scripts\D2dRandomizeSound.cs" />
-     <Compile Include="Assets\Destructible 2D\Examples\Scripts\D2dRepeatStamp.cs" />
-     <Compile Include="Assets\Destructible 2D\Examples\Scripts\D2dShake.cs" />
-     <Compile Include="Assets\Destructible 2D\Examples\Scripts\D2dSpawner.cs" />
-     <Compile Include="Assets\Destructible 2D\Examples\Scripts\D2dThrower.cs" />
-     <Compile Include="Assets\Destructible 2D\Examples\Scripts\D2dThruster.cs" />
-     <Compile Include="Assets\Destructible 2D\Examples\Scripts\D2dTile.cs" />
-     <Compile Include="Assets\Destructible 2D\Examples\Scripts\D2dWaypoints.cs" />
-     <Compile Include="Assets\Destructible 2D\Examples\Scripts\D2dWheel.cs" />
-     <Compile Include="Assets\Destructible 2D\Scripts\D2dAnimator.cs" />
-     <Compile Include="Assets\Destructible 2D\Scripts\D2dAutoCollider.cs" />
-     <Compile Include="Assets\Destructible 2D\Scripts\D2dCache.cs" />
-     <Compile Include="Assets\Destructible 2D\Scripts\D2dCalculateMass.cs" />
-     <Compile Include="Assets\Destructible 2D\Scripts\D2dCollider.cs" />
-     <Compile Include="Assets\Destructible 2D\Scripts\D2dColliderBuilder.cs" />
-     <Compile Include="Assets\Destructible 2D\Scripts\D2dCollisionHandler.cs" />
-     <Compile Include="Assets\Destructible 2D\Scripts\D2dDestroyer.cs" />
-     <Compile Include="Assets\Destructible 2D\Scripts\D2dDestructible.cs" />
-     <Compile Include="Assets\Destructible 2D\Scripts\D2dEdgeCollider.cs" />
-     <Compile Include="Assets\Destructible 2D\Scripts\D2dEdgeColliderCell.cs" />
-     <Compile Include="Assets\Destructible 2D\Scripts\D2dEditor.cs" />
-     <Compile Include="Assets\Destructible 2D\Scripts\D2dEvents.cs" />
-     <Compile Include="Assets\Destructible 2D\Scripts\D2dFixture.cs" />
-     <Compile Include="Assets\Destructible 2D\Scripts\D2dFixtureGroup.cs" />
-     <Compile Include="Assets\Destructible 2D\Scripts\D2dFloodfill.cs" />
-     <Compile Include="Assets\Destructible 2D\Scripts\D2dFloodfillIsland.cs" />
-     <Compile Include="Assets\Destructible 2D\Scripts\D2dFloodfillPixel.cs" />
-     <Compile Include="Assets\Destructible 2D\Scripts\D2dFracturer.cs" />
-     <Compile Include="Assets\Destructible 2D\Scripts\D2dHelper.cs" />
-     <Compile Include="Assets\Destructible 2D\Scripts\D2dHelper_Editor.cs" />
-     <Compile Include="Assets\Destructible 2D\Scripts\D2dHit.cs" />
-     <Compile Include="Assets\Destructible 2D\Scripts\D2dLinkedList.cs" />
-     <Compile Include="Assets\Destructible 2D\Scripts\D2dPolygonCollider.cs" />
-     <Compile Include="Assets\Destructible 2D\Scripts\D2dPolygonColliderCell.cs" />
-     <Compile Include="Assets\Destructible 2D\Scripts\D2dPool.cs" />
-     <Compile Include="Assets\Destructible 2D\Scripts\D2dPopupAttribute.cs" />
-     <Compile Include="Assets\Destructible 2D\Scripts\D2dQuad.cs" />
-     <Compile Include="Assets\Destructible 2D\Scripts\D2dQuadFracturer.cs" />
-     <Compile Include="Assets\Destructible 2D\Scripts\D2dRect.cs" />
-     <Compile Include="Assets\Destructible 2D\Scripts\D2dRequirements.cs" />
-     <Compile Include="Assets\Destructible 2D\Scripts\D2dRetainVelocity.cs" />
-     <Compile Include="Assets\Destructible 2D\Scripts\D2dSnapshot.cs" />
-     <Compile Include="Assets\Destructible 2D\Scripts\D2dSorter.cs" />
-     <Compile Include="Assets\Destructible 2D\Scripts\D2dSplitGroup.cs" />
-     <Compile Include="Assets\Destructible 2D\Scripts\D2dSplitPixel.cs" />
-     <Compile Include="Assets\Destructible 2D\Scripts\D2dVector2.cs" />
-     <Compile Include="Assets\Scripts\Ground.cs" />
+     <Compile Include="Assets\Destructible 2D\Editor\D2dAutoCollider_Editor.cs" />
+     <Compile Include="Assets\Destructible 2D\Editor\D2dCalculateMass_Editor.cs" />
+     <Compile Include="Assets\Destructible 2D\Editor\D2dCollider_Editor.cs" />
+     <Compile Include="Assets\Destructible 2D\Editor\D2dCollisionHandler_Editor.cs" />
+     <Compile Include="Assets\Destructible 2D\Editor\D2dContext.cs" />
+     <Compile Include="Assets\Destructible 2D\Editor\D2dDestroyer_Editor.cs" />
+     <Compile Include="Assets\Destructible 2D\Editor\D2dDestructible_Editor.cs" />
+     <Compile Include="Assets\Destructible 2D\Editor\D2dEdgeCollider_Editor.cs" />
+     <Compile Include="Assets\Destructible 2D\Editor\D2dFixtureGroup_Editor.cs" />
+     <Compile Include="Assets\Destructible 2D\Editor\D2dFixture_Editor.cs" />
+     <Compile Include="Assets\Destructible 2D\Editor\D2dPolygonCollider_Editor.cs" />
+     <Compile Include="Assets\Destructible 2D\Editor\D2dQuadFracturer_Editor.cs" />
+     <Compile Include="Assets\Destructible 2D\Editor\D2dRequirements_Editor.cs" />
+     <Compile Include="Assets\Destructible 2D\Editor\D2dRetainVelocity_Editor.cs" />
+     <Compile Include="Assets\Destructible 2D\Editor\D2dSorter_Editor.cs" />
      <None Include="Assets\Destructible 2D\Shaders\Diffuse.shader" />
      <None Include="Assets\Destructible 2D\Shaders\Outline.shader" />
      <None Include="Assets\Destructible 2D\Shaders\Default.shader" />
@@ -123,11 +68,23 @@
  <Reference Include="Facebook.Unity.Settings">
  <HintPath>C:/Users/Eduar/OneDrive/ThreeThingGame/Repo/Fury/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>
+ <Reference Include="UnityEditor.Advertisements">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
+ <Reference Include="UnityEditor.UI">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Networking">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.TestRunner">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/Editor/UnityEditor.TestRunner.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.TestRunner">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/UnityEngine.TestRunner.dll</HintPath>
@@ -135,14 +92,65 @@
  <Reference Include="nunit.framework">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TestRunner/nunit.framework.dll</HintPath>
  </Reference>
+ <Reference Include="UnityEditor.TreeEditor">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.Analytics">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Analytics">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/Editor/UnityEditor.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.HoloLens">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/Editor/UnityEditor.HoloLens.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.HoloLens">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityHoloLens/RuntimeEditor/UnityEngine.HoloLens.dll</HintPath>
  </Reference>
+ <Reference Include="UnityEditor.Purchasing">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityPurchasing/Editor/UnityEditor.Purchasing.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.VR">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/Editor/UnityEditor.VR.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.VR">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Graphs">
+ <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Android.Extensions">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.AppleTV.Extensions">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/AppleTVSupport/UnityEditor.AppleTV.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.WSA.Extensions">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.WSA.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Tizen.Extensions">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/TizenPlayer/UnityEditor.Tizen.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.SamsungTV.Extensions">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/STVPlayer/UnityEditor.SamsungTV.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.WebGL.Extensions">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.LinuxStandalone.Extensions">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.OSXStandalone.Extensions">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Facebook.Extensions">
+ <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/Facebook/UnityEditor.Facebook.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Cecil">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/Mono.Cecil.dll</HintPath>
@@ -156,6 +164,10 @@
  <Reference Include="UnityEditor.iOS.Extensions.Common">
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Common.dll</HintPath>
  </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp.csproj">
+      <Project>{1EACB0C8-EE32-CEBA-6469-F429B60EF9C9}</Project>      <Name>Assembly-CSharp</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
