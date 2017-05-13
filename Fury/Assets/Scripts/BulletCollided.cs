@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BulletCollided : MonoBehaviour 
 {
@@ -23,6 +24,11 @@ public class BulletCollided : MonoBehaviour
 		if(other.collider.name == "Terrain")
 		{
 			HasCollided = true;
+		}
+
+		if(other.collider.name == "leftTank" || other.collider.name == "rightTank")
+		{
+			SceneManager.LoadScene("End Credit");
 		}
 	}
 }

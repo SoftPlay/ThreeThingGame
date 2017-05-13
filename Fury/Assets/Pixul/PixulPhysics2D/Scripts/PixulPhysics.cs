@@ -2,6 +2,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using Fizzyo;
+using UnityEngine.Networking;
+using System.Text;
 
 public class PixulPhysics : MonoBehaviour 
 {
@@ -52,15 +54,31 @@ public class PixulPhysics : MonoBehaviour
 
     private BreathRecogniser breath;
 
+    private List<float> pressures;
+
     void ExhalationCompleteHandler(object sender, ExhalationCompleteEventArgs e)
     {
         this.isBad = !breath.IsBreathGood(breath.Breathlength, breath.MaxBreathLength, breath.ExhaledVolume , breath.MaxPressure);
         BarController.moveBar = false;
+        string pres = "";
+        foreach(float f in pressures)
+        {
+            pres += f + ",";
+        }
+        pres += 0;
+        pressures.Clear();
+        string ourPostData = "{\"name\": \"ed\",\"durationSeconds\": " + breath.Breathlength + ",\"pressure\": " + pres + " }";
+        byte[] pData = Encoding.ASCII.GetBytes(ourPostData.ToCharArray());
+        Dictionary<string, string> headers = new Dictionary<string, string>();
+        headers.Add("Content-Type", "application/json");
+        headers.Add("Cookie", "Our session cookie");
+        WWW www = new WWW("https://fury.azurewebsites.net/api/NewReading", pData, headers);
     }
 
 	// Use this for initialization
 	void Start () 
     {
+        pressures = new List<float>();
         this.isBad = true;
         FizzyoDevice insatnce = FizzyoDevice.Instance();
         this.gameObject.GetComponent<SpriteRenderer>().enabled = false;
@@ -124,6 +142,7 @@ public class PixulPhysics : MonoBehaviour
 	void Update () 
     {        
         float pressure = Fizzyo.FizzyoDevice.Instance().Pressure();
+        pressures.Add(pressure);
 
         breath.AddSample(Time.deltaTime, pressure);
 

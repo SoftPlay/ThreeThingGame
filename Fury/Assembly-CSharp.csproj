@@ -117,6 +117,7 @@
      <Compile Include="Assets\Destructible 2D\Scripts\D2dVector2.cs" />
      <Compile Include="Assets\MakakaIconPack\Scripts\SampleControl.cs" />
      <Compile Include="Assets\Pixul\PixulPhysics2D\Scripts\CollisionProperties.cs" />
+     <Compile Include="Assets\Pixul\PixulPhysics2D\Scripts\EndGame.cs" />
      <Compile Include="Assets\Pixul\PixulPhysics2D\Scripts\HUD_controller.cs" />
      <Compile Include="Assets\Pixul\PixulPhysics2D\Scripts\PixulPhysics.cs" />
      <Compile Include="Assets\Pixul\PixulPhysics2D\Scripts\PixulPhysicsAI.cs" />
