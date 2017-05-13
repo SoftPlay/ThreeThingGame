@@ -10,4 +10,12 @@ public class EndGame : MonoBehaviour {
 	{
 		SceneManager.LoadScene("End Credit");
 	}
+
+	void Update()
+	{
+		if(Input.GetKeyDown(KeyCode.Escape))
+		{
+			SceneManager.LoadScene("End Credit");
+		}
+	}
 }

@@ -21,6 +21,7 @@ public class BulletCollided : MonoBehaviour
 
 	void OnCollisionEnter(Collision other)
 	{
+		Debug.Log("Collided");
 		if(other.collider.name == "Terrain")
 		{
 			HasCollided = true;
