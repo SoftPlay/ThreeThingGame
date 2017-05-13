@@ -8,7 +8,7 @@ Material:
   m_PrefabInternal: {fileID: 0}
   m_Name: Diffuse
   m_Shader: {fileID: 4800000, guid: f9877eb0794f01e48a998a1452f414ac, type: 3}
-  m_ShaderKeywords: 
+  m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 5
   m_EnableInstancingVariants: 0
   m_CustomRenderQueue: -1
@@ -36,6 +36,7 @@ Material:
     m_Floats:
     - PixelSnap: 0
     - _AlphaContrast: 1
+    - _AlphaSharpness: 1
     - _AlphaThreshold: 0
     - _Cutoff: 0.44
     - _Sharpness: 5.82
