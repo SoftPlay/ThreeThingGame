@@ -67,7 +67,7 @@ public class PixulPhysics : MonoBehaviour
         }
         pres += 0;
         pressures.Clear();
-        string ourPostData = "{\"name\": \"ed\",\"durationSeconds\": " + breath.Breathlength + ",\"pressure\": " + pres + " }";
+        string ourPostData = "{\"name\": \"ed\",\"durationSeconds\": " + breath.Breathlength + ",\"pressure\": [" + pres + "] }";
         byte[] pData = Encoding.ASCII.GetBytes(ourPostData.ToCharArray());
         Dictionary<string, string> headers = new Dictionary<string, string>();
         headers.Add("Content-Type", "application/json");
