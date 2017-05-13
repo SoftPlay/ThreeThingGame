@@ -3,15 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using Fizzyo;
 
-public class PixulPhysics : MonoBehaviour 
+public class PixulPhysicsAI : MonoBehaviour 
 {
     private List<GameObject> trajectoryPoints = new List<GameObject>();
     private List<GameObject> oldTrajectoryPoints = new List<GameObject>();
     public GameObject trajectoryPointPrefab;    
     public int noOfTrajectoryPoints = 10;
     public bool enableSolidLine;
-    public bool isAI = false;
-    
+    public bool isPositive;
     public Gradient lineColour;                
     public AnimationCurve widthCurve;
     public int endVerts = 0;    
@@ -147,14 +146,7 @@ public class PixulPhysics : MonoBehaviour
 
         if(Input.GetKey("up"))
         {
-            if(isAI)
-            {
-                keyVelocity = new Vector2(-6.2f, 3.1f);
-            }
-            else
-            {
-                keyVelocity += new Vector2(0.04f, 0.02f);
-            }
+            keyVelocity += new Vector2(-0.04f, 0.02f);
 
             m_Pressed = true;
 
@@ -166,14 +158,7 @@ public class PixulPhysics : MonoBehaviour
 
         if(Input.GetKey("down"))
         {
-            if(isAI)
-            {
-                keyVelocity = new Vector2(-6.2f, 3.1f);
-            }
-            else
-            {
-                keyVelocity -= new Vector2(0.04f, 0.02f);
-            }
+            keyVelocity -= new Vector2(-0.04f, 0.02f);
 
             m_Pressed = true;
 
