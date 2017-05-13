@@ -76,8 +76,43 @@
     <Reference Include="UnityEditor">
       <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
     </Reference>
+    <Reference Include="Facebook.Unity.Settings">
+      <HintPath>Library\FacebookSDK\Facebook.Unity.Settings.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Destructible 2D\Examples\Scripts\D2dBackground.cs" />
+    <Compile Include="Assets\Destructible 2D\Examples\Scripts\D2dBullet.cs" />
+    <Compile Include="Assets\Destructible 2D\Examples\Scripts\D2dCameraShake.cs" />
+    <Compile Include="Assets\Destructible 2D\Examples\Scripts\D2dClickToExplode.cs" />
+    <Compile Include="Assets\Destructible 2D\Examples\Scripts\D2dClickToSpawn.cs" />
+    <Compile Include="Assets\Destructible 2D\Examples\Scripts\D2dClickToStamp.cs" />
+    <Compile Include="Assets\Destructible 2D\Examples\Scripts\D2dColliderlessImpact.cs" />
+    <Compile Include="Assets\Destructible 2D\Examples\Scripts\D2dCompoundPart.cs" />
+    <Compile Include="Assets\Destructible 2D\Examples\Scripts\D2dDragToShoot.cs" />
+    <Compile Include="Assets\Destructible 2D\Examples\Scripts\D2dDragToSlice.cs" />
+    <Compile Include="Assets\Destructible 2D\Examples\Scripts\D2dDragToThrow.cs" />
+    <Compile Include="Assets\Destructible 2D\Examples\Scripts\D2dExplosion.cs" />
+    <Compile Include="Assets\Destructible 2D\Examples\Scripts\D2dFlipper.cs" />
+    <Compile Include="Assets\Destructible 2D\Examples\Scripts\D2dFollow.cs" />
+    <Compile Include="Assets\Destructible 2D\Examples\Scripts\D2dGalleryGun.cs" />
+    <Compile Include="Assets\Destructible 2D\Examples\Scripts\D2dGalleryTarget.cs" />
+    <Compile Include="Assets\Destructible 2D\Examples\Scripts\D2dGui.cs" />
+    <Compile Include="Assets\Destructible 2D\Examples\Scripts\D2dGun.cs" />
+    <Compile Include="Assets\Destructible 2D\Examples\Scripts\D2dHealDamage.cs" />
+    <Compile Include="Assets\Destructible 2D\Examples\Scripts\D2dPlayerCamera.cs" />
+    <Compile Include="Assets\Destructible 2D\Examples\Scripts\D2dPlayerCar.cs" />
+    <Compile Include="Assets\Destructible 2D\Examples\Scripts\D2dPlayerSpaceship.cs" />
+    <Compile Include="Assets\Destructible 2D\Examples\Scripts\D2dRandomVelocity.cs" />
+    <Compile Include="Assets\Destructible 2D\Examples\Scripts\D2dRandomizeSound.cs" />
+    <Compile Include="Assets\Destructible 2D\Examples\Scripts\D2dRepeatStamp.cs" />
+    <Compile Include="Assets\Destructible 2D\Examples\Scripts\D2dShake.cs" />
+    <Compile Include="Assets\Destructible 2D\Examples\Scripts\D2dSpawner.cs" />
+    <Compile Include="Assets\Destructible 2D\Examples\Scripts\D2dThrower.cs" />
+    <Compile Include="Assets\Destructible 2D\Examples\Scripts\D2dThruster.cs" />
+    <Compile Include="Assets\Destructible 2D\Examples\Scripts\D2dTile.cs" />
+    <Compile Include="Assets\Destructible 2D\Examples\Scripts\D2dWaypoints.cs" />
+    <Compile Include="Assets\Destructible 2D\Examples\Scripts\D2dWheel.cs" />
     <Compile Include="Assets\Destructible 2D\Scripts\D2dAnimator.cs" />
     <Compile Include="Assets\Destructible 2D\Scripts\D2dAutoCollider.cs" />
     <Compile Include="Assets\Destructible 2D\Scripts\D2dCache.cs" />
@@ -116,7 +151,6 @@
     <Compile Include="Assets\Destructible 2D\Scripts\D2dSplitPixel.cs" />
     <Compile Include="Assets\Destructible 2D\Scripts\D2dVector2.cs" />
     <Compile Include="Assets\MakakaIconPack\Scripts\SampleControl.cs" />
-    <Compile Include="Assets\Menus\Scripts\Credit.cs" />
     <Compile Include="Assets\Pixul\PixulPhysics2D\Scripts\CollisionProperties.cs" />
     <Compile Include="Assets\Pixul\PixulPhysics2D\Scripts\HUD_controller.cs" />
     <Compile Include="Assets\Pixul\PixulPhysics2D\Scripts\PixulPhysics.cs" />
@@ -137,7 +171,6 @@
     <None Include="Assets\Destructible 2D\Shaders\Keep Alpha.shader" />
     <None Include="Assets\Destructible 2D\Shaders\Outline.shader" />
     <None Include="Assets\MakakaIconPack\Fonts\Font_Read_Me.txt" />
-    <None Include="Assets\Menus\Resources\Credits.txt" />
     <None Include="Assets\Pixul\PixulPhysics2D\Shaders\Pixul-Tiled.shader" />
     <None Include="Assets\Pixul\PixulPhysics2D\Shaders\_readme.txt" />
     <None Include="Assets\Platform Game Assets\Readme.txt" />
