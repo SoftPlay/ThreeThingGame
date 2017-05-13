@@ -40,7 +40,8 @@ public class PixelPhysics2DEditor : Editor
         //specific properties for solid line
         if(lineOptionsInt == 0)
         {
-            pp.enableSolidLine = true;                        
+            pp.enableSolidLine = true;     
+            pp.isAI = EditorGUILayout.Toggle(new GUIContent("Is AI", "Toggle AI"), pp.isAI);                   
             pp.cornerVerts = EditorGUILayout.IntField(new GUIContent("Corner Roundness", "Increase the number of verts at the corners of your trajectory"), pp.cornerVerts);
             pp.endVerts = EditorGUILayout.IntField(new GUIContent("End Roundness", "Increase roundness of the ends of your trajectory"), pp.endVerts);
             pp.widthCurve = EditorGUILayout.CurveField(new GUIContent("Width Curve", "Define the width of your trajectory"), pp.widthCurve, Color.red, new Rect(0, 0, 1, 1));

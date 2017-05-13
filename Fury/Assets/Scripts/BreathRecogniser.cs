@@ -1,4 +1,6 @@
 ﻿using System;
+using UnityEngine;
+
 namespace Fizzyo
 {
     #region Exhalation Event
@@ -193,6 +195,8 @@ namespace Fizzyo
                 this.isExhaling = true;
                 this.exhaledVolume += dt * value;
                 this.breathLength += dt;
+
+                BarController.moveBar = true;
             }
         }
 
