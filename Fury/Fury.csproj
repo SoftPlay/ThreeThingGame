@@ -153,6 +153,7 @@
     <Compile Include="Assets\MakakaIconPack\Scripts\SampleControl.cs" />
     <Compile Include="Assets\Menus\Scripts\Credit.cs" />
     <Compile Include="Assets\Pixul\PixulPhysics2D\Scripts\CollisionProperties.cs" />
+    <Compile Include="Assets\Pixul\PixulPhysics2D\Scripts\EndGame.cs" />
     <Compile Include="Assets\Pixul\PixulPhysics2D\Scripts\HUD_controller.cs" />
     <Compile Include="Assets\Pixul\PixulPhysics2D\Scripts\PixulPhysics.cs" />
     <Compile Include="Assets\Pixul\PixulPhysics2D\Scripts\PixulPhysicsAI.cs" />
@@ -160,6 +161,7 @@
     <Compile Include="Assets\Scripts\BarController.cs" />
     <Compile Include="Assets\Scripts\BreathRecogniser.cs" />
     <Compile Include="Assets\Scripts\BulletCollided.cs" />
+    <Compile Include="Assets\Scripts\EndCredits.cs" />
     <Compile Include="Assets\Scripts\FizzyoDevice.cs" />
     <Compile Include="Assets\Scripts\Ground.cs" />
     <Compile Include="Assets\Scripts\LoadCalab.cs" />

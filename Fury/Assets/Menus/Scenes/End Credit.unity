@@ -296,7 +296,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.0034013605}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 4.51, y: 2.66}
+  m_AnchoredPosition: {x: 4.95, y: 2.61}
   m_SizeDelta: {x: -371, y: 179.2041}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!132 &1322911019
@@ -367,7 +367,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   creditSkin: {fileID: 0}
-  creditSpeed: 2
+  creditSpeed: 1
 --- !u!328 &1322911023
 VideoPlayer:
   m_ObjectHideFlags: 0
