@@ -62,6 +62,7 @@
      <Compile Include="Assets\Destructible 2D\Editor\D2dRetainVelocity_Editor.cs" />
      <Compile Include="Assets\Destructible 2D\Editor\D2dSorter_Editor.cs" />
      <Compile Include="Assets\Pixul\PixulPhysics2D\Editor\PixulPhysics2DEditor.cs" />
+     <None Include="Assets\Resources\Credits.txt" />
      <None Include="Assets\Destructible 2D\Shaders\Diffuse.shader" />
      <None Include="Assets\Platform Game Assets\Readme.txt" />
      <None Include="Assets\Pixul\PixulPhysics2D\Shaders\Pixul-Tiled.shader" />
@@ -70,7 +71,7 @@
      <None Include="Assets\Destructible 2D\Shaders\Default.shader" />
      <None Include="Assets\Destructible 2D\Shaders\Keep Alpha.shader" />
      <None Include="Assets\Pixul\PixulPhysics2D\Shaders\_readme.txt" />
-     <None Include="Assets\Menus\Resources\Credits.txt" />
+     <None Include="Assets\Data\Credits.txt" />
  <Reference Include="Facebook.Unity.Settings">
  <HintPath>C:/Users/Eduar/OneDrive/ThreeThingGame/Repo/Fury/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
  </Reference>

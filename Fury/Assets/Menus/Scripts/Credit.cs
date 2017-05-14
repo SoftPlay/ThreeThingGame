@@ -15,9 +15,9 @@ public class Credit : MonoBehaviour
     void Start()
     {
         // Set the path for the credits.txt file
-        path = "Assets/Menus/Resources/Credits.txt";
+        path = "Data/Credits.txt";
         // Create reader & open file
-        tr = new StreamReader(path);
+        tr = new StreamReader(Application.dataPath + "/" + path);
         string temp;
         int count = 0;
         while ((temp = tr.ReadLine()) != null)
